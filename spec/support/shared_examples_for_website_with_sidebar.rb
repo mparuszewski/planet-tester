@@ -7,7 +7,7 @@ shared_examples 'a website with sidebar' do
 
     it 'should have only one active menu element' do
       within '#sidebar' do
-        expect(page).to have_css('li.active', count: 1, text: active_element)
+        expect(page).to have_css('li.active', count: 1, text: active_element) unless active_element.nil?
       end
     end
 

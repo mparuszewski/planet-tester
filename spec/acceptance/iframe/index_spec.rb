@@ -11,7 +11,7 @@ describe 'iframed home page' do
   end
 
   it_should_behave_like 'a website with news'
-
+  it_should_behave_like 'a website with news list'
 
   it 'should have link to GSoC 2014 HDMI2USB category page' do
     within '#main' do
