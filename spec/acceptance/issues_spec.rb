@@ -10,4 +10,5 @@ describe 'issues page' do
     let(:active_element) { 'ISSUES' }
   end
 
+  it_should_behave_like 'a website with issues'
 end
